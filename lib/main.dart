@@ -44,16 +44,22 @@ class _MyHomePageState extends State<ProjectLHome> {
           centerTitle: true,
           backgroundColor: primaryColor,
         ),
-        body: Center(
-          child: Text(
-            'Welcome to Project L',
-            style: TextStyle(
-              fontFamily: GoogleFonts.leagueSpartan().fontFamily,
+        body: Column(children: [
+          Card(
+            child: Column(
+              children: [
+                Image.asset('assets/images/Aatrox.jpeg'),
+                const ListTile(
+                  title: Text('Aatrox', style: TextStyle(fontSize: 40)),
+                  subtitle: Text('la espada de los oscuros'),
+                )
+              ],
             ),
           ),
-        ),
+        ]),
         bottomNavigationBar: BottomNavigationBar(
           fixedColor: secondaryColor,
+          currentIndex: 1,
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(Icons.newspaper), label: 'Patch Notes'),
