@@ -46,12 +46,17 @@ class _MyHomePageState extends State<ProjectLHome> {
         ),
         body: Column(children: [
           Card(
+            color: AatroxPrimaryColor,
             child: Column(
               children: [
                 Image.asset('assets/images/Aatrox.jpeg'),
                 const ListTile(
-                  title: Text('Aatrox', style: TextStyle(fontSize: 40)),
-                  subtitle: Text('la espada de los oscuros'),
+                  title: Text('Aatrox',
+                      style: TextStyle(fontSize: 40, color: white)),
+                  subtitle: Text(
+                    'la espada de los oscuros',
+                    style: TextStyle(color: white),
+                  ),
                 )
               ],
             ),
