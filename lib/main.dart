@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_l/const/colors.dart';
+import 'package:project_l/screens/home.dart';
+import 'package:project_l/screens/patchnotes.dart';
+import 'package:project_l/screens/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
         useMaterial3: true,
       ),
+      debugShowCheckedModeBanner: false,
       home: const ProjectLHome(title: 'Project L'),
     );
   }
@@ -31,40 +35,39 @@ class ProjectLHome extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return _MyHomePageState();
+    return _Main();
   }
 }
 
-class _MyHomePageState extends State<ProjectLHome> {
+class _Main extends State<ProjectLHome> {
+  final views = [PatchNotesScreen(), HomeScreen(), ProfileScreen()];
+  int indexSelected = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text(
+            widget.title,
+            style: const TextStyle(color: primaryColor, fontSize: 40.0),
+          ),
           centerTitle: true,
           backgroundColor: primaryColor,
+          elevation: 1.0,
+          forceMaterialTransparency: true,
+          shadowColor: Colors.black,
         ),
-        body: Column(children: [
-          Card(
-            color: AatroxPrimaryColor,
-            child: Column(
-              children: [
-                Image.asset('assets/images/Aatrox.jpeg'),
-                const ListTile(
-                  title: Text('Aatrox',
-                      style: TextStyle(fontSize: 40, color: white)),
-                  subtitle: Text(
-                    'la espada de los oscuros',
-                    style: TextStyle(color: white),
-                  ),
-                )
-              ],
-            ),
-          ),
-        ]),
+        body: IndexedStack(
+          index: indexSelected,
+          children: views,
+        ),
         bottomNavigationBar: BottomNavigationBar(
           fixedColor: secondaryColor,
-          currentIndex: 1,
+          currentIndex: indexSelected,
+          onTap: (index) {
+            setState(() {
+              indexSelected = index;
+            });
+          },
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(Icons.newspaper), label: 'Patch Notes'),

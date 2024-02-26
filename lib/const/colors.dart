@@ -9,3 +9,6 @@ const Color appBarColor = Color.fromARGB(110, 196, 161, 91);
 const Color AatroxPrimaryColor = Color(0xFF732B2E);
 const Color AatroxSecondaryColor = Color(0xFF302528);
 const Color AatroxAccentColor = Color(0xFF1B151A);
+const Color ThrershPrimaryColor = Color(0xFF177F8A);
+const Color ThrershSecondaryColor = Color(0xFF176968);
+const Color ThrershAccentColor = Color(0xFF172E2B);
