@@ -6,7 +6,7 @@ class CharacterWindow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-                leading: IconButton(
+        leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           color: primaryColor,
           onPressed: () {
@@ -22,15 +22,15 @@ class CharacterWindow extends StatelessWidget {
             Center(child: Column(
               children: [
                 Image.network('/assets/images/Aatrox.jpeg',fit: BoxFit.cover,
-            width: double.infinity,
-            height: 200,),
+                  width: double.infinity,
+                  height: 200,),
                 const SizedBox(height: 16),
                 const Text(
                   'Aatrox',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: AatroxPrimaryColor
+                    color: AatroxPrimaryColor,
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -52,7 +52,7 @@ class CharacterWindow extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Aatrox is a legendary warrior, one of only five that remain of an ancient ...',
+                  'Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.',
                   style: TextStyle(
                     fontSize: 16,
                   ),
@@ -65,7 +65,7 @@ class CharacterWindow extends StatelessWidget {
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(AatroxPrimaryColor),
                   ),
-                  child: const Text('Show More', style: TextStyle(color: AatroxAccentColor),),
+                  child: const Text('Show More', style: TextStyle(color: white),),
                 ),
                 const SizedBox(height: 16),
                 const Text(
@@ -102,26 +102,11 @@ class CharacterWindow extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 16),
-                      Text(
-                        'Stat 4',
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      ),
-                      SizedBox(height: 16),
-                      Text(
-                        'Stat 5',
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      ),
-                      SizedBox(height: 16),
                     ],
                   ),
                 ),
               ],
-            ),
-          ),
+            )),
           ],
         ),
       ),

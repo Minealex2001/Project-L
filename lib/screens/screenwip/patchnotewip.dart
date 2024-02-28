@@ -34,170 +34,28 @@ class PatchNoteWIPScreen extends StatelessWidget {
                   ),
                   // Placeholder for Patch Notes 14.4
                   const Text(
-                    'League of Legends Patch Notes 14.4',
-                    style: TextStyle(fontSize: 16, color: secondaryColor),
+                    'Patch Notes 14.4',
+                    style: TextStyle(fontSize: 16),
                   ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
+                  const SizedBox(height: 16),
+                  Card(
+                    child: ListTile(
+                      leading: Image.network("https://th.bing.com/th/id/OIP.ECNU08KLqdNiedXjGIAt8wHaEK?rs=1&pid=ImgDetMain", width: 100, height: 100),
+                      title: const Text('New Champion: Vex'),
+                      subtitle: const Text('Vex, the Gloomist, is a mid-lane mage who specializes in controlling the battlefield by manipulating her opponents\' emotions. She is a high-damage mage who can control the battlefield by manipulating her opponents\' emotions.'),
+                    ),
                   ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
+                  const SizedBox(height: 16),
+                  const Card(
+                    child: ListTile(
+                      title: Text("Nerfs", style: TextStyle(),),
+                    ),
                   ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
+                  const Card(
+                    child: ListTile(
+                      title: Text("Buffs", style: TextStyle(),),
+                    ),
                   ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, mauris auctor aliquet ultrices, nunc nunc tincidunt nunc, nec lacinia nunc nisl auctor nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc. Sed id nunc auctor, tincidunt nunc nec, aliquet nunc.',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  
                 ],
               ),
             ),
