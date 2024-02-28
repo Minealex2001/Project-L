@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                   child: Card(
                     child: Column(
                       children: [
-                        Image.network('assets/images/Aatrox.jpeg'),
+                        Image.network('assets/images/Thresh.jpeg'),
                         const Text('Card 3'),
                       ],
                     ),
@@ -59,4 +59,4 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-  }
+}
