@@ -4,6 +4,7 @@ import 'package:project_l/const/colors.dart';
 import 'package:project_l/screens/home.dart';
 import 'package:project_l/screens/patchnotes.dart';
 import 'package:project_l/screens/profile.dart';
+import 'package:project_l/screens/screenwip/champwip.dart';
 import 'package:project_l/screens/screenwip/patchnotewip.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => const ProjectLHome(title: 'Project L'),
         '/patchnotewip': (context) => PatchNoteWIPScreen(),
+        '/champwip': (context) => CharacterWindow(),
       },
       theme: ThemeData(
         textTheme: GoogleFonts.leagueSpartanTextTheme(),

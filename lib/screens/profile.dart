@@ -37,10 +37,10 @@ class ProfileScreen extends StatelessWidget {
                 itemCount: gameHistory.length,
                 itemBuilder: (context, index) {
                   return Card(
+                    color: colorCard(gameHistory[index]) ,
                     child: ListTile(
                       title: Text('Game ${gameHistory[index]}'),
                     ),
-                    color: colorCard(gameHistory[index]) ,
                   );
                 },
               ),

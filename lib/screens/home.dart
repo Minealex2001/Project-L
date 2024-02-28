@@ -10,26 +10,21 @@ class HomeScreen extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                  child: Card(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: 200, // ajusta el tamaño según tus necesidades
-                          height: 200, // ajusta el tamaño según tus necesidades
-                          child: Image.network('assets/images/Aatrox.jpeg'),
-                        ),
-                        const Text('Aatrox'),
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Card(
-                    child: Column(
-                      children: [
-                        Image.network('assets/images/Aatrox.jpeg'),
-                        const Text('Card 2'),
-                      ],
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/champwip');
+                    },
+                    child: Card(
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            height: 200,
+                            child: Image.network('assets/images/Aatrox.jpeg'),
+                          ),
+                          const Text('Aatrox'),
+                        ],
+                      ),
                     ),
                   ),
                 ),
