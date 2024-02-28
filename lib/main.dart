@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const ProjectLHome(title: 'Project L'),
         '/patchnotewip': (context) => PatchNoteWIPScreen(),
         '/champwip': (context) => CharacterWindow(),
+        '/profile': (context) => ProfileScreen(),
+        '/patchnotes': (context) => PatchNotesScreen(),
       },
       theme: ThemeData(
         textTheme: GoogleFonts.leagueSpartanTextTheme(),
@@ -78,7 +80,8 @@ class _Main extends State<ProjectLHome> {
           },
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.newspaper), label: 'Patch Notes'),
+                icon: Icon(Icons.newspaper),
+                label: 'Patch Notes'),
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',
