@@ -6,6 +6,13 @@ class CharacterWindow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+                leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          color: primaryColor,
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         title: const Text('Character Details', style: TextStyle(color: white),),
         backgroundColor: AatroxPrimaryColor,
       ),
@@ -53,12 +60,12 @@ class CharacterWindow extends StatelessWidget {
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: () {
-                    // TODO: Implement logic to show more biography
+                    
                   },
-                  child: const Text('Show More', style: TextStyle(color: AatroxAccentColor),),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(AatroxPrimaryColor),
                   ),
+                  child: const Text('Show More', style: TextStyle(color: AatroxAccentColor),),
                 ),
                 const SizedBox(height: 16),
                 const Text(

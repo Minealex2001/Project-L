@@ -8,11 +8,13 @@ class PatchNoteWIPScreen extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
+          color: primaryColor,
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        title: const Text('Patch Notes 14.4'),
+        title: const Text('Patch Notes 14.4', style: TextStyle(color: white),),
+        backgroundColor: secondaryColor,
       ),
       body: Column(
         children: [
